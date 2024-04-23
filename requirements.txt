@@ -1,0 +1,9 @@
+Flask
+packaging
+torch
+transformers
+python-dateutil
+datasets
+FlagEmbedding
+pyserini
+openai

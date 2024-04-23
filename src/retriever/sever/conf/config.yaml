@@ -1,0 +1,27 @@
+log_dir: /path/to/log/dir/
+
+retrieve_model:
+  model_name_or_path: /path/to/retrieve/model/
+  batch_size: 256
+  pooling: cls
+  l2_norm: True
+  k: 100
+  device: cuda:0
+  threads: 32
+  ef_search:
+
+reranker:
+  model_name_or_path: /path/to/reranker/
+  batch_size: 64
+  cutoff_layers: 28
+  device: 0
+
+corpus:
+  language: en
+  index_dir: /path/to/index_dir/
+  corpus_path: /path/to/corpus_path/
+
+query:
+  max_length: 256
+  prefix:
+  query_to_pos_path:
